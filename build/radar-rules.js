@@ -2483,6 +2483,9 @@
   "ifeng.com":{ _name:"凤凰网",
     ".":[ { title:"大风号",
         docs:"https://docs.rsshub.app/new-media.html#feng-huang-wang" } ] },
+  "iguoguo.net":{ _name:"爱果果",
+    ".":[ { title:"最新H5",
+        docs:"https://docs.rsshub.app/design.html#ai-guo-guo-h5" } ] },
   "independent.co.uk":{ _name:"PS5 stock UK - The Independent",
     www:[ { title:"News",
         docs:"https://docs.rsshub.app/shopping.html#the-independent",
@@ -3279,6 +3282,26 @@
   "thejewishmuseum.org":{ _name:"Jewish Museum",
     ".":[ { title:"Exhibitions",
         docs:"https://docs.rsshub.app/en/travel.html#the-jewish-museum" } ] },
+  "okjike.com":{ _name:"即刻",
+    m:[ { title:"用户动态",
+        docs:"https://docs.rsshub.app/social-media.html#ji-ke",
+        source:"/users/:uid",
+        target:"/jike/user/:uid" },
+      { title:"用户动态",
+        docs:"https://docs.rsshub.app/social-media.html#ji-ke",
+        source:"/reposts/:repostId",
+        target:(params, url, document) => {
+                    const uid = document.querySelector('.avatar').getAttribute('href').replace('/users/', '');
+                    return uid ? `/jike/user/${uid}` : '';
+                } },
+      { title:"圈子",
+        docs:"https://docs.rsshub.app/social-media.html#ji-ke",
+        source:"/topics/:id",
+        target:"/jike/topic/:id" },
+      { title:"圈子 - 纯文字",
+        docs:"https://docs.rsshub.app/social-media.html#ji-ke",
+        source:"/topics/:id",
+        target:"/jike/topic/text/:id" } ] },
   "jisilu.cn":{ _name:"集思录",
     ".":[ { title:"广场",
         docs:"https://docs.rsshub.app/bbs.html#ji-si-lu-guang-chang",
@@ -3857,6 +3880,15 @@
         source:[ "/nippon/:category?",
           "/cn" ],
         target:"/nippon/:category?" } ] },
+  "njit.edu.cn":{ _name:"南京工程学院",
+    jwc:[ { title:"南京工程学院教务处",
+        docs:"https://docs.rsshub.app/university.html#nan-jing-gong-cheng-xue-yuan-nan-jing-gong-cheng-xue-yuan-jiao-wu-chu",
+        source:"/index/:type",
+        target:(params) => `/njit/jwc/${params.type.replace('.htm', '')}` } ],
+    www:[ { title:"南京工程学院通知公告",
+        docs:"https://docs.rsshub.app/university.html#nan-jing-gong-cheng-xue-yuan-nan-jing-gong-cheng-xue-yuan-tong-zhi-gong-gao",
+        source:"/",
+        target:"/njit/tzgg" } ] },
   "njnu.edu.cn":{ _name:"南京师范大学",
     ceai:[ { title:"计算机与电子信息学院-人工智能学院",
         docs:"https://docs.rsshub.app/university.html#nan-jing-shi-fan-da-xue",
@@ -3901,6 +3933,93 @@
                         return '/njupt/notice';
                     } else if (url.pathname.indexOf('/1596') !== -1) {
                         return '/njupt/news';
+                    }
+                } } ] },
+  "njust.edu.cn":{ _name:"南京理工大学",
+    jwc:[ { title:"教务处",
+        docs:"https://docs.rsshub.app/university.html#nan-jing-li-gong-da-xue",
+        source:[ "/:type/list.htm" ],
+        target:(params) => {
+                    let type = '';
+                    switch (params.type) {
+                        case '1216':
+                            type = 'jstz';
+                            break;
+                        case '1217':
+                            type = 'xstz';
+                            break;
+                        case '1218':
+                            type = 'xw';
+                            break;
+                        case '1219':
+                            type = 'xydt';
+                            break;
+                        default:
+                            return;
+                    }
+                    return `/njust/jwc/${type}`;
+                } } ],
+    cwc:[ { title:"财务处",
+        docs:"https://docs.rsshub.app/university.html#nan-jing-li-gong-da-xue",
+        source:[ "/:type/list.htm" ],
+        target:(params) => {
+                    let type = '';
+                    switch (params.type) {
+                        case '12432':
+                            type = 'tzgg';
+                            break;
+                        case '1382':
+                            type = 'bslc';
+                            break;
+                        default:
+                            return;
+                    }
+                    return `/njust/cwc/${type}`;
+                } } ],
+    gs:[ { title:"研究生院",
+        docs:"https://docs.rsshub.app/university.html#nan-jing-li-gong-da-xue",
+        source:[ "/:type/list.htm" ],
+        target:"/njust/gs/:type" } ],
+    eoe:[ { title:"电光学院",
+        docs:"https://docs.rsshub.app/university.html#nan-jing-li-gong-da-xue",
+        source:[ "/:type/list.htm" ],
+        target:(params) => {
+                    let type = '';
+                    switch (params.type) {
+                        case '1920':
+                            type = 'tzgg';
+                            break;
+                        case '1919':
+                            type = 'xwdt';
+                            break;
+                        default:
+                            return;
+                    }
+                    return `/njust/eoe/${type}`;
+                } } ],
+    dgxg:[ { title:"电光学院研学网/年级网站",
+        docs:"https://docs.rsshub.app/university.html#nan-jing-li-gong-da-xue",
+        source:[ "/:type/list.htm",
+          "/:grade/:type/list.htm" ],
+        target:(params) => {
+                    if (!params.grade) {
+                        let type = '';
+                        switch (params.type) {
+                            case '6509':
+                                type = 'gstz';
+                                break;
+                            case '6511':
+                                type = 'xswh';
+                                break;
+                            case '6510':
+                                type = 'jyzd';
+                                break;
+                            default:
+                                return;
+                        }
+                        return `/njust/dgxg/${type}`;
+                    } else {
+                        return `/njust/eo/${params.grade}/${params.type}`;
                     }
                 } } ] },
   "nltimes.nl":{ _name:"NL Times",
@@ -5195,6 +5314,15 @@
         docs:"https://docs.rsshub.app/finance.html#wu-la-bang-pin-dao",
         source:[ "/reports/brokerage_news" ],
         target:"/ulapia/reports/brokerage_news" } ] },
+  "uraaka-joshi.com":{ _name:"裏垢女子まとめ",
+    ".":[ { title:"主页",
+        docs:"https://docs-rsshub.pages.dev/other.html#li-gou-nu-zi-まとめ",
+        source:[ "/" ],
+        target:"/uraaka-joshi" },
+      { title:"用户",
+        docs:"https://docs-rsshub.pages.dev/other.html#li-gou-nu-zi-まとめ",
+        source:[ "/:id" ],
+        target:"/uraaka-joshi/:id" } ] },
   "ustb.edu.cn":{ _name:"北京科技大学",
     gs:[ { title:"研究生院",
         docs:"https://docs.rsshub.app/university.html#bei-jing-ke-ji-da-xue",
@@ -6797,22 +6925,6 @@
         docs:"https://docs.rsshub.app/traditional-media.html#xiang-gang-01",
         source:"/tag/:id/:title",
         target:"/hk01/tag/:id" } ] },
-  "okjike.com":{ _name:"即刻",
-    m:[ { title:"用户动态",
-        docs:"https://docs.rsshub.app/social-media.html#ji-ke-yong-hu-dong-tai",
-        source:"/reposts/:repostId",
-        target:(params, url, document) => {
-                    const uid = document.querySelector('.avatar').getAttribute('href').replace('/users/', '');
-                    return uid ? `/jike/user/${uid}` : '';
-                } },
-      { title:"圈子",
-        docs:"https://docs.rsshub.app/social-media.html#ji-ke-quan-zi",
-        source:"/topics/:id",
-        target:"/jike/topic/:id" },
-      { title:"圈子 - 纯文字",
-        docs:"https://docs.rsshub.app/social-media.html#ji-ke-quan-zi-chun-wen-zi",
-        source:"/topics/:id",
-        target:"/jike/topic/text/:id" } ] },
   "popiapp.cn":{ _name:"Popi 提问箱",
     www:[ { title:"提问箱新回答",
         docs:"https://docs.rsshub.app/social-media.html#popi-ti-wen-xiang",
