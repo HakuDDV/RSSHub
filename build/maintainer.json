@@ -700,11 +700,11 @@
     "/elasticsearch-cn/:params?": [
         "nczitzk"
     ],
-    "/elsevier/:journal/latest": [
+    "/elsevier/:journal": [
         "Derekmini",
         "sunwolf-swb"
     ],
-    "/elsevier/:journal/vol/:id": [
+    "/elsevier/:journal/:issue": [
         "Derekmini",
         "sunwolf-swb"
     ],
@@ -1208,11 +1208,11 @@
     "/icac/news/:lang?": [
         "linbuxiao, TonyRL"
     ],
-    "/ieee/:journal/latest/date/:sortType?": [
+    "/ieee/journal/:journal/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
     ],
-    "/ieee/:journal/latest/vol/:sortType?": [
+    "/ieee/journal/:journal/recent/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
     ],
@@ -2286,6 +2286,12 @@
     "/taptap/topic/:id/:type?/:sort?/:lang?": [
         "hoilc",
         "TonyRL"
+    ],
+    "/techflow520/newsflash": [
+        "nczitzk"
+    ],
+    "/techflow520/:category?": [
+        "nczitzk"
     ],
     "/telegram/telegram/channel/:username/:routeParams?": [
         "DIYgod",
