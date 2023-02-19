@@ -759,7 +759,7 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 ### 用户发帖
 
-<Route author="luyuhuang" example="/netease/ds/63dfbaf4117741daaf73404601165843" path="/netease/ds/:id" :paramsDesc="['用户ID']"/>
+<Route author="luyuhuang" example="/163/ds/63dfbaf4117741daaf73404601165843" path="/163/ds/:id" :paramsDesc="['用户ID']"/>
 
 ## 小黑盒
 
@@ -852,6 +852,18 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 | PC 游戏  | PS4 游戏 | Switch 游戏 | NS 其他板块 | galgame | VR 游戏 | 3DS 游戏 | psv 游戏 | xbox360 游戏 | ps3 游戏 | 其他掌机    |
 | ------ | ------ | --------- | ------- | ------- | ----- | ------ | ------ | ---------- | ------ | ------- |
 | pcgame | ps4    | sgame     | nsaita  | ps      | bt    | 3ds    | psv    | jiaocheng  | ps3yx  | zhangji |
+
+</Route>
+
+## 游戏日报
+
+### 分类
+
+<Route author="TonyRL" example="/yxrb/info" path="/yxrb/:category?" :paramsDesc="['分类，见下表，预设为 `info`']" radar="1">
+
+| 资讯   | 访谈      | 服务      | 游理游据     |
+| ---- | ------- | ------- | -------- |
+| info | talking | service | comments |
 
 </Route>
 
@@ -954,6 +966,18 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 ### 公告
 
 <Route author="magic-akari" example="/kirara/news" path="/kirara/news"/>
+
+## ファミ通
+
+### 分类
+
+<Route author="TonyRL" example="/famitsu/category/new-article" path="/famitsu/category/:category?" :paramsDesc="['分类，见下表，预设为 `new-article`']" radar="1">
+
+| 新着          | PS5 | Switch | PS4 | ニュース | ゲームニュース   | PR TIMES | 動画     | 特集・企画記事         | インタビュー    | 取材・リポート      | レビュー   | インディーゲーム   |
+| ----------- | --- | ------ | --- | ---- | --------- | -------- | ------ | --------------- | --------- | ------------ | ------ | ---------- |
+| new-article | ps5 | switch | ps4 | news | news-game | prtimes  | videos | special-article | interview | event-report | review | indie-game |
+
+</Route>
 
 ## マギアレコード（Magia Record, 魔法纪录）
 

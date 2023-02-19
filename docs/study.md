@@ -234,6 +234,12 @@ path="/ctfhub/upcoming/:limit?"
 
 </Route>
 
+## ResearchGate
+
+### Publications
+
+<Route author="nczitzk" example="/researchgate/publications/Somsak-Panha" path="/researchgate/publications/:username" :paramsDesc="['用户名，可在用户页地址栏中找到']" puppeteer="1" anticrawler="1"/>
+
 ## X-MOL 平台
 
 ### 新闻
@@ -295,6 +301,24 @@ path="/ctfhub/upcoming/:limit?"
 :::
 
 </Route>
+
+## 福建考试报名网
+
+### 分类
+
+<Route author="nczitzk" example="/fjksbm" path="/fjksbm/:category?" :paramsDesc="['分类，见下表，默认为网络报名进行中']" radar="1">
+
+| 已发布公告 (方案)，即将开始 | 网络报名进行中 | 网络报名结束等待打印准考证 | 正在打印准考证 | 考试结束，等待发布成绩 | 已发布成绩 | 新闻动态 | 政策法规   |
+| --------------- | ------- | ------------- | ------- | ----------- | ----- | ---- | ------ |
+| 0               | 1       | 2             | 3       | 4           | 5     | news | policy |
+
+</Route>
+
+## 韓國海事法學會
+
+### 学术论文
+
+<Route author="TonyRL" example="/kimlaw/thesis" path="/kimlaw/thesis" radar="1"/>
 
 ## 杭州市国家普通话测试网报信息
 
@@ -446,11 +470,7 @@ path="/ctfhub/upcoming/:limit?"
 
 ### 精品课程
 
-<Route author="hoilc" example="/open163/vip" path="/open163/vip" radar="1" rssbud="1"/>
-
-### 最新课程
-
-<Route author="hoilc" example="/open163/latest" path="/open163/latest" radar="1" rssbud="1"/>
+<Route author="hoilc" example="/163/open/vip" path="/163/open/vip" radar="1" rssbud="1"/>
 
 ## 下厨房
 
@@ -582,11 +602,11 @@ path="/ctfhub/upcoming/:limit?"
 
 ### 知识库
 
-<Route author="aha2mao" example="/yuque/doc/75258" path="/yuque/doc/:repo_id" :paramsDesc="['仓库id，可在对应知识库主页的`/api/books/${repo_id}/docs`请求里找到']">
+<Route author="aha2mao ltaoo" example="/yuque/ruanyf/weekly" path="/yuque/:name/:book" :paramsDesc="['用戶名', '知识库 ID']" radar="1">
 
-| Node.js 专栏 | 阮一峰每周分享 | 语雀使用手册 |
-| ---------- | ------- | ------ |
-| 75258      | 102804  | 75257  |
+| Node.js 专栏                                               | 阮一峰每周分享                                                        | 语雀使用手册                                                   |
+| -------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------- |
+| [/yuque/egg/nodejs](https://rsshub.app/yuque/egg/nodejs) | [/yuque/ruanyf/weekly](https://rsshub.app/yuque/ruanyf/weekly) | [/yuque/yuque/help](https://rsshub.app/yuque/yuque/help) |
 
 </Route>
 
@@ -644,6 +664,12 @@ path="/ctfhub/upcoming/:limit?"
 ### 通知公告
 
 <Route author="nczitzk" example="/cpta/notice" path="/cpta/notice" />
+
+## 中国研究生招生信息网
+
+### 考研动态
+
+<Route author="SunBK201" example="/chsi/kydt" path="/chsi/kydt" radar="1" />
 
 ## 中国智库网
 

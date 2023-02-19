@@ -23,6 +23,16 @@ pageClass: routes
 
 </Route>
 
+## ACM Special Interest Group on Security Audit and Control
+
+### The ACM Conference on Computer and Communications Security
+
+<Route author="ZeddYu" example="/sigsac/ccs" path="/sigsac/ccs">
+
+抓取的 Papers 从 2020 年开始
+
+</Route>
+
 ## American Chemistry Society
 
 ### Journal
@@ -32,6 +42,38 @@ pageClass: routes
 ::: tip 提示
 
 见 [Browse Content](https://pubs.acs.org)
+
+:::
+
+</Route>
+
+## American Economic Association
+
+### Journal
+
+<Route author="nczitzk" example="/aeaweb/aer" path="/aeaweb/:id" :paramsDesc="['期刊 id，可在对应期刊页 URL 中找到']" supportScihub="1">
+
+期刊 [American Economic Review](https://www.aeaweb.org/journals/aer) 的 URL 是 `https://www.aeaweb.org/journals/aer`，其中 `aer` 即为其期刊 id，故该期刊对应路由为 `/aeaweb/aer`。
+
+::: tip 提示
+
+更多期刊可在 [AEA Journals](https://www.aeaweb.org/journals) 中找到。
+
+:::
+
+</Route>
+
+## Annual Reviews
+
+### Journal
+
+<Route author="nczitzk" example="/annualreviews/anchem" path="/annualreviews/:id" :paramsDesc="['期刊 id，可在对应期刊页 URL 中找到']" supportScihub="1">
+
+期刊 [Annual Review of Analytical Chemistry](https://www.annualreviews.org/journal/anchem) 的 URL 是 `https://www.annualreviews.org/journal/anchem`，其中 `anchem` 即为其期刊 id，故该期刊对应路由为 `/annualreviews/anchem`。
+
+::: tip 提示
+
+更多期刊可在 [Browse Journals](https://www.annualreviews.org/action/showPublications) 中找到。
 
 :::
 
@@ -121,6 +163,16 @@ pageClass: routes
 ### 期刊指定卷
 
 <Route author="Derekmini sunwolf-swb" example="/elsevier/signal-processing/192" path="/elsevier/:journal/:issue" :paramsDesc="['期刊名称，URL 中 `/journal/` 后部分','发行号 (如果 Volume 与 Issue 同时存在，采用 `Volume-Issue` 形式, e.g., `/elsevier/aace-clinical-case-reports/7-6`)']" radar="1" rssbud="1"/>
+
+## IEEE Computer Society
+
+### IEEE Symposium on Security and Privacy
+
+<Route author="ZeddYu" example="/ieee-security/security-privacy" path="/ieee-security/security-privacy">
+
+抓取的 Papers 从 2020 年开始
+
+</Route>
 
 ## IEEE Xplore
 
@@ -232,6 +284,16 @@ You can get all short name of a journal from <https://www.nature.com/siteindex> 
 
 <Route author="TonyRL" example="/nature/siteindex" path="/nature/siteindex"/>
 
+## Network and Distributed System Security (NDSS) Symposium
+
+### Accepted papers
+
+<Route author="ZeddYu" example="/ndss-symposium/ndss" path="/ndss-symposium/ndss">
+
+抓取的 Papers 从 2020 年开始
+
+</Route>
+
 ## Oxford University Press
 
 ### Oxford Academic
@@ -334,6 +396,16 @@ You can get all short name of a journal from <https://www.nature.com/siteindex> 
 <Route author="xraywu" example="/stork/keyword/409159/R4j3Hbn5ia" path="/stork/keyword/:trackID/:displayKey" :paramsDesc="['关键词订阅 URL 上的 trackID 参数','关键词订阅 URL 上的  displayKey 参数']">
 
 在 Stork 上注册并订阅关键词后，在 `我的` -> `关键词` 中可找到对应关键词的订阅 URL。URL 后的两个参数即为路由参数。
+
+</Route>
+
+## USENIX
+
+### Security Symposia
+
+<Route author="ZeddYu" example="/usenix/usenix-security-sympoium" path="/usenix/usenix-security-sympoium">
+
+抓取的 Papers 从 2020 年开始
 
 </Route>
 
