@@ -2778,6 +2778,15 @@
         "target": "/bnu/dwxgb/:category/:type"
       }
     ],
+    "fdy": [
+      {
+        "title": "党委学生工作部辅导员发展中心",
+        "docs": "https://docs.rsshub.app/university.html#bei-jing-shi-fan-da-xue",
+        "source": [
+          "/"
+        ]
+      }
+    ],
     "www.lib": [
       {
         "title": "图书馆通知",
@@ -7481,6 +7490,15 @@
           "/"
         ],
         "target": "/gov/moe/newest_file"
+      },
+      {
+        "title": "司局通知",
+        "docs": "https://docs.rsshub.app/government.html#zhong-hua-ren-min-gong-he-guo-jiao-yu-bu",
+        "source": [
+          "/s78/:column/tongzhi",
+          "/s78/:column"
+        ],
+        "target": "/gov/moe/s78/:column"
       }
     ]
   },
@@ -15404,6 +15422,18 @@
           "/:cate"
         ],
         "target": "/qipamaijia/:cate"
+      }
+    ]
+  },
+  "qiyoujiage.com": {
+    "_name": "汽油价格网",
+    ".": [
+      {
+        "title": "今日油价查询",
+        "docs": "https://docs.rsshub.app/other.html#qi-you-jia-ge-wang",
+        "source": [
+          "/*"
+        ]
       }
     ]
   },
