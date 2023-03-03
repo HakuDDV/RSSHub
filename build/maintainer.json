@@ -1172,6 +1172,9 @@
     "/diershoubing/news": [
         "wushijishan"
     ],
+    "/discord/channel/:channelID": [
+        "TonyRL"
+    ],
     "/disinfo/publications": [
         "nczitzk"
     ],
@@ -1783,6 +1786,13 @@
     ],
     "/gov/cnnic/:path+": [
         "nczitzk"
+    ],
+    "/gov/csrc/auditstatus/:apply_id": [
+        "hillerliao"
+    ],
+    "/gov/csrc/news/:suffix*": [
+        "chinobing",
+        "LogicJake"
     ],
     "/gov/customs/list/:gchannel?": [
         "Jeason0228",
@@ -3524,6 +3534,9 @@
     "/pianyuan/indexers/pianyuan/results/search/api": [
         "jerry1119"
     ],
+    "/picnob/user/:id": [
+        "TonyRL"
+    ],
     "/picuki/profile/:id/:functionalFlag?": [
         "hoilc",
         "Rongronggg9",
@@ -4792,6 +4805,12 @@
     "/wechat/wxnmh/:id": [
         "laampui"
     ],
+    "/weekendhk": [
+        "TonyRL"
+    ],
+    "/weekendhk/": [
+        "TonyRL"
+    ],
     "/weibo/keyword/:keyword/:routeParams?": [
         "DIYgod"
     ],
@@ -4898,6 +4917,9 @@
     ],
     "/wsyu/news/:type?": [
         "Derekmini"
+    ],
+    "/wxkol/show/:id": [
+        "TonyRL"
     ],
     "/wyzxwk/article/:id?": [
         "nczitzk"
@@ -5039,6 +5061,9 @@
     ],
     "/yaohuo/": [
         "nczitzk"
+    ],
+    "/ycwb/:node": [
+        "TimWu007"
     ],
     "/yicai/author/:id?": [
         "nczitzk"
@@ -5816,9 +5841,6 @@
     "/8btc/:authorid": [],
     "/8btc/news/flash": [],
     "/vuevideo/:userid": [],
-    "/csrc/news/:suffix?": [],
-    "/csrc/fashenwei": [],
-    "/csrc/auditstatus/:apply_id": [],
     "/lwn/alerts/:distributor": [],
     "/lol/newsindex/:type": [],
     "/lolapp/recommend": [],

@@ -762,7 +762,7 @@
     ".": [
       {
         "title": "专家文章",
-        "docs": "https://docs.rsshub.app/new-media.html#jing-ji-50-ren-lun-tan",
+        "docs": "https://docs.rsshub.app/study.html#jing-ji-50-ren-lun-tan",
         "source": [
           "/home/article/index/category/zhuanjia.html",
           "/"
@@ -4864,6 +4864,20 @@
       }
     ]
   },
+  "discord.com": {
+    "_name": "Discord",
+    ".": [
+      {
+        "title": "Channel Messages",
+        "docs": "https://docs.rsshub.app/en/social-media.html#discord",
+        "source": [
+          "/channels/:guildId/:channelID/:messageID",
+          "/channels/:guildId/:channelID"
+        ],
+        "target": "/discord/channel/:channelID"
+      }
+    ]
+  },
   "disinfo.eu": {
     "_name": "EU Disinfo Lab",
     ".": [
@@ -7350,6 +7364,28 @@
         "source": [
           "/"
         ]
+      }
+    ]
+  },
+  "csrc.gov.cn": {
+    "_name": "中国证券监督管理委员会",
+    "neris": [
+      {
+        "title": "申请事项进度",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zheng-quan-jian-du-guan-li-wei-yuan-hui",
+        "source": [
+          "/alappl/home1/onlinealog"
+        ]
+      }
+    ],
+    "www": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/government.html#zhong-guo-zheng-quan-jian-du-guan-li-wei-yuan-hui",
+        "source": [
+          "/csrc/*suffix"
+        ],
+        "target": "/gov/csrc/:suffix"
       }
     ]
   },
@@ -15000,6 +15036,19 @@
       }
     ]
   },
+  "picnob.com": {
+    "_name": "Picnob",
+    ".": [
+      {
+        "title": "User profile",
+        "docs": "https://docs.rsshub.app/en/social-media.html#picnob",
+        "source": [
+          "/profile/:id/*"
+        ],
+        "target": "/picnob/user/:id"
+      }
+    ]
+  },
   "picuki.com": {
     "_name": "Picuki",
     "www": [
@@ -19699,6 +19748,19 @@
       }
     ]
   },
+  "weekendhk.com": {
+    "_name": "新假期周刊",
+    ".": [
+      {
+        "title": "最新文章",
+        "docs": "https://docs.rsshub.app/traditional-media.html#xin-jia-qi-zhou-kan",
+        "source": [
+          "/"
+        ],
+        "target": "/weekendhk"
+      }
+    ]
+  },
   "weibo.cn": {
     "_name": "微博",
     "m": [
@@ -20046,6 +20108,18 @@
         "docs": "https://docs.rsshub.app/other.html#wu-chang-shou-yi-xue-yuan",
         "source": "/*",
         "target": "/wsyu/news/mtjj"
+      }
+    ]
+  },
+  "wxkol.com": {
+    "_name": "微小领",
+    ".": [
+      {
+        "title": "微信公众号",
+        "docs": "https://docs.rsshub.app/new-media.html#wei-xiao-ling",
+        "source": [
+          "/show/:id"
+        ]
       }
     ]
   },
@@ -20404,16 +20478,14 @@
     ]
   },
   "xwlb.com.cn": {
-    "_name": "新闻联播直播",
+    "_name": "羊城晚报金羊网",
     ".": [
       {
-        "title": "新闻联播文字版完整版",
-        "docs": "https://docs.rsshub.app/traditional-media.html#yang-shi-xin-wen",
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/traditional-media.html#yang-cheng-wan-bao-jin-yang-wang",
         "source": [
-          "/cctv.html",
           "/"
-        ],
-        "target": "/xwlb"
+        ]
       }
     ]
   },
@@ -20707,6 +20779,17 @@
         "docs": "https://docs.rsshub.app/social-media.html#youtube",
         "source": "/c/:id",
         "target": "/youtube/c/:id"
+      },
+      {
+        "title": "社群",
+        "docs": "https://docs.rsshub.app/social-media.html#youtube",
+        "source": [
+          "/channel/:handle/community",
+          "/channel/:handle",
+          "/:handle/community",
+          "/:handle/featured",
+          "/:handle"
+        ]
       },
       {
         "title": "播放列表",
