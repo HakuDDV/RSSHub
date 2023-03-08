@@ -1690,7 +1690,7 @@
     "/github/branches/:user/:repo": [
         "max-arnold"
     ],
-    "/github/comments/:user/:repo/:type/:number": [
+    "/github/comments/:user/:repo/:number": [
         "TonyRL"
     ],
     "/github/contributors/:user/:repo/:order?/:anon?": [
@@ -3536,6 +3536,9 @@
     "/paradigm/writing": [
         "Fatpandac"
     ],
+    "/patagonia/patagonia/new-arrivals/:category": [
+        "NavePnow"
+    ],
     "/penguin-random-house/the-read-down": [
         "StevenRCE0"
     ],
@@ -5349,6 +5352,9 @@
     ],
     "/zjgtjy/:type?": [
         "Fatpandac"
+    ],
+    "/zjol/paper/:id?": [
+        "nczitzk"
     ],
     "/zju/career/:type": [
         "Caicailiushui"
