@@ -468,6 +468,20 @@ Solidot 提供的 feed:
 
 </Route>
 
+## The Atlantic
+
+### News
+
+<Route author="NavePnow" example="/theatlantic/latest" path="/theatlantic/:category" :paramsDesc="['分类, 见下表']">
+
+| Popular      | Latest | Politics | Technology | Business |
+| ------------ | ------ | -------- | ---------- | -------- |
+| most-popular | latest | politics | technology | business |
+
+More categories (except photo) can be found within the navigation bar at <https://www.theatlantic.com/>
+
+</Route>
+
 ## The Economist
 
 ### 分类
@@ -1182,7 +1196,19 @@ IT・科学 tech_science
 
 ### 新闻
 
-<Route author="oppilate" example="/wsj/en-us/opinion" path="/wsj/:lang/:category?" :paramsDesc="['语言，支持 `en-us`、`zh-cn`、`zh-tw`', '分类，仅 `en-us` 支持分类订阅。支持 `opinion`, `world_news`, `us_bussiness`, `market_news`, `technology`, `lifestyle`。']">
+<Route author="oppilate NavePnow" example="/wsj/en-us/opinion" path="/wsj/:lang/:category?" :paramsDesc="['语言，支持 `en-us`、`zh-cn`、`zh-tw`', '分类，见下表']">
+
+en_us
+
+| World | U.S. | Politics | Economy | Business | Tech       | Markets | Opinion | Books & Arts | Real Estate | Life & Work | Sytle               | Sports |
+| ----- | ---- | -------- | ------- | -------- | ---------- | ------- | ------- | ------------ | ----------- | ----------- | ------------------- | ------ |
+| world | us   | politics | economy | business | technology | markets | opinion | books-arts   | realestate  | life-work   | style-entertainment | sports |
+
+zh-cn / zh-tw
+
+| 国际    | 中国    | 金融市场    | 经济      | 商业       | 科技         | 派         | 专栏与观点   |
+| ----- | ----- | ------- | ------- | -------- | ---------- | --------- | ------- |
+| world | china | markets | economy | business | technology | life-arts | opinion |
 
 通过提取文章全文，以提供比官方源更佳的阅读体验。
 
@@ -2568,5 +2594,17 @@ category 对应的关键词有
 `https://www.rfa.org/cantonese/news` 对应 `/rfa/cantonese/news`
 
 `https://www.rfa.org/cantonese/news/htm` 对应 `/rfa/cantonese/news/htm`
+
+</Route>
+
+## 组织人事报
+
+### 电子报
+
+<Route author="5upernove-heng" example="/zuzhirenshi" path="/zuzhirenshi/:id?" :paramsDesc="['报纸版号，默认为全部']" radar="1">
+
+| 第一版 要闻 | 第二版 要闻 | 第三版 人才 | 第四版 人社工作 | 第五版 基层党建 | 第六版 理论评论 | 第七版 史事通鉴 | 第八版 关注 |
+| ------ | ------ | ------ | -------- | -------- | -------- | -------- | ------ |
+| 1      | 2      | 3      | 4        | 5        | 6        | 7        | 8      |
 
 </Route>
