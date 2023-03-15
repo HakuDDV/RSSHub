@@ -308,6 +308,9 @@
     "/ally/rail/:category?/:topic?": [
         "Rongronggg9"
     ],
+    "/amazon/awsblogs/:locale?": [
+        "HankChow"
+    ],
     "/amazon/kindle/software-updates": [
         "NavePnow"
     ],
@@ -1293,6 +1296,9 @@
     "/douban/group/:groupid/:type?": [
         "DIYgod"
     ],
+    "/douban/list/:type?": [
+        "5upernova-heng"
+    ],
     "/douban/jobs/:type": [
         "Fatpandac"
     ],
@@ -1621,6 +1627,9 @@
     ],
     "/gameapps/": [
         "TonyRL"
+    ],
+    "/gamebase/news/:type?/:category?": [
+        "nczitzk"
     ],
     "/gamer/gnn/:category?": [
         "Arracc"
@@ -3000,6 +3009,9 @@
     "/macfilos/blog": [
         "nczitzk"
     ],
+    "/magazinelib/latest-magazine/:query?": [
+        "NavePnow"
+    ],
     "/mangadex/:id/:lang?": [
         "vzz64"
     ],
@@ -3517,6 +3529,9 @@
     "/oschina/user/:id": [
         "dxmpalb"
     ],
+    "/oshwhub/:sortType?": [
+        "tylinux"
+    ],
     "/oup/:name": [
         "Fatpandac"
     ],
@@ -3750,6 +3765,9 @@
         "emdoe",
         "SivaGao",
         "HenryQW"
+    ],
+    "/qianp/news/:path*": [
+        "TonyRL"
     ],
     "/qianzhan/analyst/column/:type?": [
         "moke8"
@@ -4294,6 +4312,12 @@
     "/swjtu/jyzpxx": [
         "qizidog"
     ],
+    "/swjtu/jwc": [
+        "mobyw"
+    ],
+    "/swjtu/xg/:code?": [
+        "mobyw"
+    ],
     "/swpu/bgw/:code": [
         "CYTMWIA"
     ],
@@ -4412,6 +4436,9 @@
     "/test/:id": [
         "DIYgod",
         "NeverBehave"
+    ],
+    "/theatlantic/:category": [
+        "NavePnow"
     ],
     "/thecatcity/:term?": [
         "TonyRL"
@@ -4770,6 +4797,12 @@
     ],
     "/v1tx/": [
         "TonyRL"
+    ],
+    "/vcb-s/": [
+        "cxfksword"
+    ],
+    "/vcb-s/category/:cate": [
+        "cxfksword"
     ],
     "/verfghbw/press/:keyword?": [
         "quinn-dev"
@@ -5401,6 +5434,9 @@
     ],
     "/zuel/notice": [
         "nczitzk"
+    ],
+    "/zuzhirenshi/:id?": [
+        "5upernova-heng"
     ],
     "/zyshow/:region?/:id": [
         "nczitzk"
